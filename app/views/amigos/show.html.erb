@@ -2,9 +2,11 @@
 
 <%= render @amigo %>
 
-<div>
-  <%= link_to "Editar este amigo", edit_amigo_path(@amigo), class:"nav-link" %> |
-  <%= link_to "Volver", amigos_path, class:"nav-link" %>
+<div class:"container">
+  <%= link_to "Editar este amigo", edit_amigo_path(@amigo), class:"btn btn-secondary" %>
+  <br>
+  <%= link_to "Volver", amigos_path, class:"btn btn-secondary" %>
+  <br>
 
-  <%= button_to "Eliminar amigo", @amigo, method: :delete %>
+  <%= button_to "Eliminar amigo", @amigo, method: :delete , class:"btn btn-secondary"%>
 </div>

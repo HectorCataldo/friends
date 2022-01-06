@@ -6,9 +6,9 @@
   <% @amigos.each do |amigo| %>
     <%= render amigo %>
     <p>
-      <%= link_to "Mostrar amigo", amigo %>
+      <%= link_to "Mostrar amigo", amigo, class:"btn btn-secondary" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Nuevo amigo", new_amigo_path %>
+<%= link_to "Nuevo amigo", new_amigo_path, class:"btn btn-secondary" %>
