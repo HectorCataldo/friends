@@ -1,4 +1,6 @@
+#Rutas de la página
 Rails.application.routes.draw do
+  resources :amigos
   #get 'home/index'
   get 'home/about'
   root 'home#index'

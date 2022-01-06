@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @amigo %>
+
+<div>
+  <%= link_to "Editar este amigo", edit_amigo_path(@amigo), class:"nav-link" %> |
+  <%= link_to "Volver", amigos_path, class:"nav-link" %>
+
+  <%= button_to "Eliminar amigo", @amigo, method: :delete %>
+</div>
