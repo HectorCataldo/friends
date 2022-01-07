@@ -2,11 +2,17 @@
 
 <%= render @amigo %>
 
-<div class:"container">
-  <%= link_to "Editar este amigo", edit_amigo_path(@amigo), class:"btn btn-secondary" %>
+<div class="row", style="padding:10px">
+<br>
+  <p class="col-4">
+    <%= link_to "Editar este amigo", edit_amigo_path(@amigo), class:"btn btn-secondary" %>
+  </p>
   <br>
-  <%= link_to "Volver", amigos_path, class:"btn btn-secondary" %>
+  <p class= "col-4">
+    <%= link_to "Volver", amigos_path, class:"btn btn-secondary" %>
+  </p>
   <br>
-
+  <p class="col-2">
   <%= button_to "Eliminar amigo", @amigo, method: :delete , class:"btn btn-secondary"%>
+  </p>
 </div>

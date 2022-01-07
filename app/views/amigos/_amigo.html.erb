@@ -1,32 +1,40 @@
-<div id="<%= dom_id amigo %>">
-  <p>
-    <strong>Nombre:</strong>
-    <%= amigo.first_name %>
-  </p>
+<style>
+.card-text{
+  padding: 5px;
+}
+</style>
+<div class="card">
+  <ul class="list-group">
+    <div id="<%= dom_id amigo %>">
+      <li class="list-group-item"><p class="card-text">
+        <strong>Nombre:</strong>
+        <%= amigo.first_name %>
+      </p></li>
 
-  <p>
-    <strong>Apodo:</strong>
-    <%= amigo.string %>
-  </p>
+      <li class="list-group-item"><p class="card-text">
+        <strong>Apodo:</strong>
+        <%= amigo.string %>
+      </p></li>
 
-  <p>
-    <strong>Apellido:</strong>
-    <%= amigo.last_name %>
-  </p>
+      <li class="list-group-item"><p class="card-text">
+        <strong>Apellido:</strong>
+        <%= amigo.last_name %>
+      </p></li>
 
-  <p>
-    <strong>Email:</strong>
-    <%= amigo.email %>
-  </p>
+      <li class="list-group-item"><p class="card-text">
+        <strong>Email:</strong>
+        <%= amigo.email %>
+      </p></li>
 
-  <p>
-    <strong>Número de teléfono:</strong>
-    <%= amigo.phone %>
-  </p>
+      <li class="list-group-item"><p class="card-text">
+        <strong>Número de teléfono:</strong>
+        <%= amigo.phone %>
+      </p></li>
 
-  <p>
-    <strong>Twitter:</strong>
-    <%= amigo.twitter %>
-  </p>
-
+      <li class="list-group-item"><p class="card-text">
+        <strong>Twitter:</strong>
+        <%= amigo.twitter %>
+      </p></li>
+  </ul>
 </div>
+

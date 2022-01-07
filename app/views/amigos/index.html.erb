@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Amigos</h1>
-
-<div id="amigos">
-  <% @amigos.each do |amigo| %>
-    <%= render amigo %>
-    <p>
-      <%= link_to "Mostrar amigo", amigo, class:"btn btn-secondary" %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "Nuevo amigo", new_amigo_path, class:"btn btn-secondary" %>
+      <div id="amigos">
+        <% @amigos.each do |amigo|%>
+          <%= render amigo%>
+          <br>
+          <p>
+            <%= link_to "Mostrar amigo", amigo, class:"btn btn-secondary" ,style:"display: block"%>
+          </p>
+          <br>
+        <% end %>
+      </div>
+<br>
+<%= link_to "Agregar amigo", new_amigo_path, class:"btn btn-secondary" %>
